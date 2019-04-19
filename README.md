@@ -14,3 +14,5 @@ Poniżej lista technologii użytych do projektu:
 ## Źródła
 * Ikonki: https://fontawesome.com/icons?d=gallery
 * Fonty: https://fonts.google.com/?query=aleo https://www.fontspace.com/creatype-studio/halimun
+
+Zapraszam do code-review :)
