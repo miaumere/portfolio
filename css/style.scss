@@ -1,0 +1,150 @@
+@font-face {
+    font-family: "Halimun";
+    src: url("../fonts/Halimun.ttf") format('truetype');
+
+}
+
+$font2: "Halimun";
+
+// KOLEJNOŚĆ PROPERTIES!!!!!!!!!!!!!!!!!!1
+:root {
+    font-size: 77%;
+    font-family: "Aleo Light";
+    background-image: url("../img/background.png");
+}
+
+.body {
+    height: 100%;
+
+    &__header {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+        background-repeat: no-repeat;
+    }
+}
+
+.main {
+    justify-content: space-around;
+
+}
+
+.h1 {
+
+    &__text {
+        font-size: 3rem;
+        font-family: $font2;
+        text-align: center;
+        white-space: pre-wrap;
+
+    }
+}
+.title {
+    text-align: center;
+    font-size: 3rem;
+    font-family: $font2;
+    margin: 2rem;
+}
+
+.desc {
+    font-size: 2rem;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.mark {
+    color: fuchsia;
+    background-color: transparent;
+}
+.section {
+    margin: 10px;
+
+    &__text {
+        color: black;
+        white-space: pre-wrap;
+    }
+}
+
+.list {
+    display:flex;
+    align-content: center;
+    flex-wrap: wrap;
+
+    &__name {
+        font-size: 1.5rem;
+    }
+
+    &__logo {
+        height: 40px;
+        font-size: 40px;
+    }
+    
+    &__desc {
+        margin: 10px;
+        width: 100px;
+    }
+}
+.introduction {
+    display: flex;
+}
+
+.contact {
+    &__container{        
+        display: flex;
+        justify-content: space-evenly;    
+    }
+}
+
+.icon {
+    font-size: 3rem;
+    margin: 5px;
+}
+
+.projects {
+
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 100px;
+
+    }
+    &__box {
+        position: relative;
+        height: 400px;
+        width: 400px;
+        overflow: hidden;
+
+    }
+    &__image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: all 0.4s;
+
+        &:hover {
+            transform: scale(1.1);
+            filter: blur(2px);
+            
+        }
+    }
+    &__text {
+        color: green;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        z-index: 9999;
+    }
+}
+
+.green {
+    background-color: green;
+}
+.blue {
+    background-color: blue;
+}
+.yellow {
+    background-color: yellow;
+}

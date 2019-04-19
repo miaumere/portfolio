@@ -1,0 +1,169 @@
+@font-face {
+  font-family: "Halimun";
+  src: url("../fonts/Halimun.ttf") format("truetype");
+}
+
+:root {
+  font-size: 77%;
+  font-family: "Aleo Light";
+  background-image: url("../img/background.png");
+}
+
+.body {
+  height: 100%;
+}
+
+.body__header {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#a8edea), to(#fed6e3));
+  background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+  background-repeat: no-repeat;
+}
+
+.main {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.h1__text {
+  font-size: 3rem;
+  font-family: "Halimun";
+  text-align: center;
+  white-space: pre-wrap;
+}
+
+.title {
+  text-align: center;
+  font-size: 3rem;
+  font-family: "Halimun";
+  margin: 2rem;
+}
+
+.desc {
+  font-size: 2rem;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.mark {
+  color: fuchsia;
+  background-color: transparent;
+}
+
+.section {
+  margin: 10px;
+}
+
+.section__text {
+  color: black;
+  white-space: pre-wrap;
+}
+
+.list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.list__name {
+  font-size: 1.5rem;
+}
+
+.list__logo {
+  height: 40px;
+  font-size: 40px;
+}
+
+.list__desc {
+  margin: 10px;
+  width: 100px;
+}
+
+.introduction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.icon {
+  font-size: 3rem;
+  margin: 5px;
+}
+
+.projects__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 100px;
+}
+
+.projects__box {
+  position: relative;
+  height: 400px;
+  width: 400px;
+  overflow: hidden;
+}
+
+.projects__image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.projects__image:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+}
+
+.projects__text {
+  color: green;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  z-index: 9999;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+/*# sourceMappingURL=style.css.map */
